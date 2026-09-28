@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Student Management</h1>
+    <fieldset>
+        <form action="" id="form-container">
+            <div id="form">
+            <label for="name" id="">Full Name:</label>
+            <br>
+            <input type="text" id="name"><br><br>
+            <label for="email" id="">Email:</label>
+            <br>
+            <input type="email" id="email"><br><br>
+            <label for="branch">Branch:</label>
+            <br>
+            <input type="text" name="branch" id="branch"><br><br>
+            <label for="year">Year:</label>
+            <br>
+            <input type="text" name="year" id="year"><br><br>
+            <button type="submit" id="submit" name="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+            </div>
+            
+            
+        </form>
+    </fieldset>
+    <div class="table-container">
+
+            <h2>Students</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <!-- JavaScript will add rows here -->
+                <tbody id="studentList">
+                    
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
