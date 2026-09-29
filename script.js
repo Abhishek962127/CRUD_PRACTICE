@@ -31,6 +31,7 @@ submit.addEventListener('click', (event) => {
         return;
     }
     let student = {
+        id:Date.now(),
         name: name1.value,
         email: email.value,
         branch: branch.value,
@@ -41,6 +42,7 @@ submit.addEventListener('click', (event) => {
 
 
     const tableRow = document.createElement('tr');
+    tableRow.dataset.id = student.id;
 
     const tableHeadName = document.createElement('th');
     const tableHeadEmail = document.createElement('th');
@@ -73,8 +75,8 @@ submit.addEventListener('click', (event) => {
     del.addEventListener('click', (e) => {
         e.stopPropagation();
 
-        const idx = arr.findIndex(
-            (task) => task.id == newList.dataset.id
+        const idx = students.findIndex(
+            (task) => task.id == studentList.dataset.id
         );
 
         if (idx !== -1) {
@@ -92,7 +94,7 @@ submit.addEventListener('click', (event) => {
         year.value = tableHeadYear.textContent;
 
         editRow = tableRow;
-        console.log(editRow)
+        
     });
     
 })
