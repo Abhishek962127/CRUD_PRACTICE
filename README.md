@@ -22,3 +22,4 @@ A beginner-friendly **Student Management CRUD application** built using **HTML, 
 ```bash
 git clone https://github.com/Abhishek962127/CRUD_PRACTICE.git
 cd CRUD_PRACTICE
+dbmate new 
